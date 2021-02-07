@@ -1,0 +1,33 @@
+{
+  "name": "PoloTestServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Simone Bembi <simone.bembi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js",
+    "build:client": "webpack",
+    "watch:client": "webpack --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "fork-ts-checker-webpack-plugin": "^6.1.0",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass-loader": "^11.0.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.15",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.1.3",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
