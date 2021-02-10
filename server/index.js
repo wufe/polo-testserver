@@ -30,7 +30,7 @@ app.all('*', (req, res) => {
         <tr><td colspan=2 style="font-weight: bold; text-align: center">Repository</td></tr>
         <tr>
             <td>Branch</td>
-            <td>Dev (rev2)</td>
+            <td>Dev (rev3)</td>
         </tr>
         <tr><td colspan=2 style="font-weight: bold; text-align: center">General request info</td></tr>
         <tr>
