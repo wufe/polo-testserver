@@ -19,7 +19,7 @@ app.all('*', (req, res) => {
     <title>Document</title>
     
 </head>
-<body>
+<body style="background: #2e3440; color: #d8dee9">
     <div id="app"></div>
     <table>
         <tr><td colspan=2 style="font-weight: bold; text-align: center">Machine</td></tr>
