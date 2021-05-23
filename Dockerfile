@@ -7,4 +7,4 @@ COPY . .
 RUN npm install && \
     npm run build:client
 
-CMD node server/index.js 
+CMD node server/index.js
