@@ -30,7 +30,7 @@ app.all('*', (req, res) => {
         <tr><td colspan=2 style="font-weight: bold; text-align: center">Repository</td></tr>
         <tr>
             <td>Branch</td>
-            <td>feature/FEAT-1-my-bugged-feature (7th rev)</td>
+            <td>feature/FEAT-1-my-bugged-feature (8th rev)</td>
         </tr>
         <tr><td colspan=2 style="font-weight: bold; text-align: center">General request info</td></tr>
         <tr>
