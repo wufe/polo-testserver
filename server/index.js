@@ -4,10 +4,10 @@ const port = 3000;
 const path = require('path')
 const os = require('os');
 
-const staticPath = path.resolve(__dirname, '..', 'dist');
-console.log({ staticPath })
+// const staticPath = path.resolve(__dirname, '..', 'dist');
+// console.log({ staticPath })
 
-app.use('/dist', express.static(staticPath));
+// app.use('/dist', express.static(staticPath));
 
 app.all('*', (req, res) => {
     res.send(`<!DOCTYPE html>
@@ -43,7 +43,7 @@ app.all('*', (req, res) => {
         </tr>
         <tr><td colspan=2 style="font-weight: bold; text-align: center">Headers</td></tr>
         ${Object.entries(req.headers).map(([key, value]) =>
-            `<tr>
+        `<tr>
                 <td>${key}</td>
                 <td>${value}</td>
             </tr>`).join('')}

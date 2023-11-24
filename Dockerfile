@@ -6,7 +6,6 @@ COPY . .
 
 RUN curl http://metaphorpsum.com/paragraphs/444
 
-RUN npm install && \
-    npm run build:client
+RUN npm install --omit=dev
 
 CMD node server/index.js
