@@ -8,4 +8,6 @@ RUN apt update
 RUN apt install -y curl
 RUN apt install -y python3
 
+RUN echo 'test'
+
 CMD python3 -m http.server 3000
