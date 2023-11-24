@@ -8,4 +8,4 @@ RUN apt update
 RUN apt install -y curl
 RUN apt install -y python3
 
-CMD tail -f /dev/null
+CMD python3 -m http.server 3000
