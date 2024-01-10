@@ -9,7 +9,7 @@ const os = require('os');
 
 // app.use('/dist', express.static(staticPath));
 
-app.all('*', (req, res) => {
+app.all('/', (req, res) => {
     res.send(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,10 +47,20 @@ app.all('*', (req, res) => {
                 <td>${key}</td>
                 <td>${value}</td>
             </tr>`).join('')}
+        <tr><td><a href="/fwd-test">Forward test</a></td></tr>
     </table>
     <script type="text/javascript" src="/dist/client.js"></script>
 </body>
 </html>`)
+});
+
+app.all('/fwd-test', (req, res) => {
+    res.send(`This is the /fwd-test endpoint.
+    If you are seeing this, probably the forward has not been successful.`);
+});
+
+app.all('/fwd-dest-test', (req, res) => {
+    res.send(`This is the /fwd-dest-test endpoint: the forward has been successful.`);
 });
 
 app.listen(port, () => {
