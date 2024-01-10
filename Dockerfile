@@ -1,12 +1,12 @@
-FROM debian:12
+FROM node:21
 LABEL name polo-test-server
 
 WORKDIR /app
 COPY . .
 
-RUN apt update
-RUN apt install -y curl
-RUN apt install -y python3
+# RUN apt update
+# RUN apt install -y curl
+# RUN apt install -y python3
 
 RUN npm install && \
     npm run build:client
