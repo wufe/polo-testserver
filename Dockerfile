@@ -8,6 +8,7 @@ RUN apt update
 RUN apt install -y curl
 RUN apt install -y python3
 
-RUN echo 'test'
+RUN npm install && \
+    npm run build:client
 
 CMD node server/index.js
