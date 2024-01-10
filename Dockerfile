@@ -1,4 +1,4 @@
-FROM node:21
+FROM node:16
 LABEL name polo-test-server
 
 WORKDIR /app
